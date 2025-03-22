@@ -8,19 +8,30 @@
     <script src="tailwind.js"></script>
 </head>
 
+<style>
+    .a {
+        position: absolute;
+        bottom: ;
+    }
+</style>
+
 <body style="background-image: url(bg.jpg); background-position: center;">
     <div class="w-screen h-screen grid justify-center content-evenly ">
-        <h1 class="font-bold text-[2rem] text-center mb-[10vh] bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 p-[7px] px-[7vw]" id="num">هنوز ذکری نگفته اید</h1>
+        <h1 class="font-bold text-[2rem] text-center mb-[10vh] bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 p-[7px] px-[7vw]"
+            id="num">هنوز ذکری نگفته اید</h1>
         <div class="size-[50vw] rounded-full mx-auto bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100"
             id="button" onclick="numplus()"></div>
 
         <div class="w-[30vw] h-[5vh] content-center mx-auto bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100"
-            id="button" onclick="reset()"><p class="text-center font-bold text-[1.25rem]">پاک کردن</p></div>
+            id="button" onclick="reset()">
+            <p class="text-center font-bold text-[1.25rem]">پاک کردن</p>
+        </div>
+
     </div>
-
-    <hr>
-
-    <p>made with MohammadJavad Raei (c)</p>
+    
+    <div class="w-screen absolute bottom-0">
+        <p class="text-center bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100">Created by MohammadJavad Raei (c)</p>
+    </div>
 
     <script>
         function numplus() {
