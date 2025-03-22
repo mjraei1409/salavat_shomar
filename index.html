@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صلوات شمار</title>
+    <script src="tailwind.js"></script>
+</head>
+
+<body style="background-image: url(bg.jpg); background-position: center;">
+    <div class="w-screen h-screen grid justify-center content-evenly ">
+        <h1 class="font-bold text-[2rem] text-center mb-[10vh] bg-green-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-20 border border-gray-100 p-[7px] px-[7vw]" id="num">هنوز ذکری نگفته اید</h1>
+        <div class="size-[50vw] rounded-full mx-auto bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100"
+            id="button" onclick="numplus()"></div>
+
+        <div class="w-[30vw] h-[5vh] content-center mx-auto bg-green-100 bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-0 border border-gray-100"
+            id="button" onclick="reset()"><p class="text-center font-bold text-[1.25rem]">پاک کردن</p></div>
+    </div>
+
+    <script>
+        function numplus() {
+            let num = document.getElementById('num').innerHTML
+
+            if (num == 'هنوز ذکری نگفته اید') {
+                document.getElementById('num').innerHTML = 1
+                console.log(num)
+            } else {
+                num = Number(num) + 1
+                document.getElementById('num').innerHTML = num
+                console.log(num)
+            }
+        }
+
+        function reset() {
+            document.getElementById('num').innerHTML = 'هنوز ذکری نگفته اید'
+        }
+    </script>
+</body>
+
+</html>
