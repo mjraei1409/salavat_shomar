@@ -1,0 +1,1 @@
+Zekr counter | ذکر شمار
